@@ -4,3 +4,9 @@ profiles
 posts
 
 will need separate files for these because it will get to messy
+
+
+Using postman (http client) enables different types of http requests 
+    - like post request to register route 
+    - authorization headers
+    - fantastic piece of software to deal with back end api
