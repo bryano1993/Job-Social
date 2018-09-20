@@ -1,0 +1,6 @@
+3 main resources
+users
+profiles
+posts
+
+will need separate files for these because it will get to messy
