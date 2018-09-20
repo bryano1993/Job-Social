@@ -17,3 +17,6 @@ json webtoken module
 
 email & password login
     - validating email and password and make sure it exists 
+
+12-Creating The JWT
+    - create a token when  `res.json({ msg: "Success" });`
