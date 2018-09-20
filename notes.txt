@@ -10,3 +10,10 @@ Using postman (http client) enables different types of http requests
     - like post request to register route 
     - authorization headers
     - fantastic piece of software to deal with back end api
+
+json webtoken module
+    - creates token,
+    - passport will validate it and extract the user's information from it
+
+email & password login
+    - validating email and password and make sure it exists 
