@@ -20,3 +20,10 @@ email & password login
 
 12-Creating The JWT
     - create a token when  `res.json({ msg: "Success" });`
+
+13-Passport JWT Authentication Strategy
+    - login, will retrieve token for a user
+    - then we tried to access a protected route, we did it without a token and got unauthorized back
+    - then we added the correct token and now its responding with the user 
+    - accepting tokens that will validate a user and access our protected routes 
+    
