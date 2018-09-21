@@ -27,3 +27,8 @@ email & password login
     - then we added the correct token and now its responding with the user 
     - accepting tokens that will validate a user and access our protected routes 
     
+14- validation handlers 1
+
+    -validating login and user modules
+
+15- validation handlers 2
