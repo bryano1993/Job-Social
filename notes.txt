@@ -39,3 +39,8 @@ email & password login
 17 - creating the profile module
 
     -created the profile model and exported it .
+    
+18 - Current user profile route
+
+    - creating the profile route in routes/api/profile.js
+    

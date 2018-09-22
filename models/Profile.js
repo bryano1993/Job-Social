@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 //create the profile schema
 
-const Profile = new Schema({
+const ProfileSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
     ref: "users"
