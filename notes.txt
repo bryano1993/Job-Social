@@ -35,3 +35,7 @@ email & password login
 
     -finishing up validation for register and login 
     
+
+17 - creating the profile module
+
+    -created the profile model and exported it .
