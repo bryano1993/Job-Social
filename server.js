@@ -1,4 +1,3 @@
-//main entry file
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -10,27 +9,27 @@ const posts = require("./routes/api/posts");
 
 const app = express();
 
-//Body parser middleware
+// Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-//DB Config
+// DB Config
 const db = require("./config/keys").mongoURI;
 
-//Connect to MongoDB
+// Connect to MongoDB
 mongoose
   .connect(db) //using a promise
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
-//passport middleware
+// Passport middleware
 app.use(passport.initialize());
 
 //Passport Config
 //Passport uses strategy (JWT strategy)
 require("./config/passport")(passport);
 
-//User Routes
+// Use Routes
 app.use("/api/users", users);
 app.use("/api/profile", profile);
 app.use("/api/posts", posts);

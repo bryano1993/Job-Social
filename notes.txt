@@ -32,3 +32,6 @@ email & password login
     -validating login and user modules
 
 15- validation handlers 2
+
+    -finishing up validation for register and login 
+    
