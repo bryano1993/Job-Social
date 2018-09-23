@@ -57,3 +57,8 @@ email & password login
                 if there is it will send back an error
 
                 and if not it will go ahead and create the profile
+
+20 Profile Field Validations
+
+    - 
+
