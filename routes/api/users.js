@@ -24,6 +24,8 @@ router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 // @route   GET api/users/register
 // @desc    Register user
 // @access  Public
+//localhost:5000/api/users/register
+
 router.post("/register", (req, res) => {
   const { errors, isValid } = validateRegisterInput(req.body);
 
@@ -68,6 +70,7 @@ router.post("/register", (req, res) => {
 // @route   GET api/users/login
 // @desc    Login User / Returning JWT Token
 // @access  Public
+//localhost:5000/api/users/login
 router.post("/login", (req, res) => {
   const { errors, isValid } = validateLoginInput(req.body);
 

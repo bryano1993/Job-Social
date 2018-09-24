@@ -58,7 +58,7 @@ router.get("/all", (req, res) => {
     .catch(err => res.status(404).json({ profile: "There are no profiles" }));
 });
 
-// @route   GET api/profile/handle/:handle
+// @route   GET api/profile/handle/:handle (backend route)
 // @desc    Get profile by handle
 // @access  Public
 
@@ -100,7 +100,7 @@ router.get("/user/:user_id", (req, res) => {
     );
 });
 
-// @route   POST api/profile
+// @route   POST api/profile (localhost:5000/api/profile)
 // @desc    Create or edit user profile
 // @access  Private
 router.post(

@@ -16,6 +16,7 @@ json webtoken module
     - passport will validate it and extract the user's information from it
 
 email & password login
+    - localhost:5000/api/users/register
     - validating email and password and make sure it exists 
 
 12-Creating The JWT
@@ -62,3 +63,10 @@ email & password login
 
     - 
 
+21 More profile api routes
+
+    - Getting user profile by handle
+    - Get user profile by id
+    - Get all profiles and serve them by json array
+    - can change to private if wanting to
+    - up to you on how long you want tokens to last
