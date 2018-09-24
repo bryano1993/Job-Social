@@ -1,3 +1,7 @@
+HotKeys
+Select same word multiple times Ctrl + D
+
+
 3 main resources
 users
 profiles
@@ -70,3 +74,7 @@ email & password login
     - Get all profiles and serve them by json array
     - can change to private if wanting to
     - up to you on how long you want tokens to last
+
+22 Add Experience & Education Routes
+
+    - to an array(profile) and delete them 
