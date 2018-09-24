@@ -97,4 +97,15 @@ email & password login
 28-add-and-remove-comment-routes
     - create the ability to add and remove comments 
 
+30-implementing-react
+    - incorporating react     
+    - npm i concurrently (enables us to incorporate the front end and the back end at the same time)
+        - allows us to run a script and have multiple commands 
+    -  "dev": "concurrently \"npm run server\" \"npm run client\""
+                    server and client will be ran at the same time
+
+    - npm run dev
+
+    localhost:5000 is back end
+    localhost:3000 is front end
     
