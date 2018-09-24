@@ -78,3 +78,12 @@ email & password login
 22 Add Experience & Education Routes
 
     - to an array(profile) and delete them 
+
+23 Delete education and Experience
+
+    - allows a user to delete education and experience and user and profile
+
+24 Creating the post model
+    - might want to add different models like video or images that will be possible to upload 
+    - going to create post that will be able to get liked  and commented on 
+
