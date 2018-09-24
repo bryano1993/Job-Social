@@ -87,3 +87,7 @@ email & password login
     - might want to add different models like video or images that will be possible to upload 
     - going to create post that will be able to get liked  and commented on 
 
+26-get-and-delete-post-routes
+
+    - get and delete post routes
+    
