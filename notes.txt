@@ -95,4 +95,6 @@ email & password login
     - like and remove likes
 
 28-add-and-remove-comment-routes
+    - create the ability to add and remove comments 
+
     
