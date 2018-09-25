@@ -160,5 +160,9 @@ What is redux?
 
 npm i redux react-redux redux-thunk
 - redux and store intialized
+- create auth
 - we want to register a user through an action 
+
+41-redux-action-and-reducer-workflow
+-everything we do are going to be redux actions 
 
