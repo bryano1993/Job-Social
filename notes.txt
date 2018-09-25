@@ -112,3 +112,8 @@ email & password login
 32-basic-layout
     - created the basic layout which included the navbar, landing, and Footer.js files components and added it to app.js
 
+33-react-router-setup
+    - we need a router because we are going to have multiple routes 
+    - million ways to do a spcefic things. All about preference 
+    - want to create routes with the components 
+    - will create private routes in the future 
