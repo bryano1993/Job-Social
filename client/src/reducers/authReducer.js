@@ -1,21 +1,24 @@
-import { SET_CURRENT_USER, TEST_DISPATCH } from "../actions/types";
+import isEmpty from "../validation/is-empty";
+
+import { SET_CURRENT_USER } from "../actions/types";
 
 const initialState = {
   isAuthenticated: false,
-  user: {},
-  hello: "test"
+  user: {}
 };
 
 export default function(state = initialState, action) {
   switch (action.type) {
-    case TEST_DISPATCH:
+    case SET_CURRENT_USER:
       return {
         ...state,
+        isAuthenticated: !isEmpty(action.payload),
         user: action.payload
-        //fill user with payload which is userdate from auth actions
-        // all we are doing is dispatching to the user the data thats passed in
       };
     default:
       return state;
   }
 }
+
+//fill user with payload which is userdate from auth actions
+// all we are doing is dispatching to the user the data thats passed in

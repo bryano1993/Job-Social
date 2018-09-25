@@ -166,3 +166,13 @@ npm i redux react-redux redux-thunk
 41-redux-action-and-reducer-workflow
 -everything we do are going to be redux actions 
 
+42-registration-and-the-error-reducer
+- went throug  work flow
+ - commit and action register user
+ in action file create a type aof test dispatch- 
+ we then manipulate state
+ then wwe mapped states to props and set auth to prop in our componenet 
+    - if user exists out oput form if it doesnt dont output form 
+
+
+
