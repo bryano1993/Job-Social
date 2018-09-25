@@ -120,3 +120,8 @@ email & password login
 
 35-creating-the-login-form-with-state
     - implemented the creation of a login form with states 
+
+37-testing-registration-with-our-form
+    - using axios (frontend) to retrieve https requests 
+    - easier (less code)
+
