@@ -176,3 +176,16 @@ npm i redux react-redux redux-thunk
 
 
 
+43-redux-login-action-and-set-current-user
+
+-try to remember the work flow from back end
+-we need to rewquest token then we need token to access any protected routes 
+    - take token once logged in and store it in local storage 
+    - if we are logged in. If the token is in local storage and validated we are going to send that with everythin grequest we make
+        -if we are logged in we can access any protected routes 
+    -set up logg out that it will destroy it in local storage so that we cant make requests
+    - complex 
+
+    npm i jwt-decode
+        - token  = bearer . This will extract user from that 
+        
