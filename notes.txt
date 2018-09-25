@@ -117,3 +117,11 @@ email & password login
     - million ways to do a spcefic things. All about preference 
     - want to create routes with the components 
     - will create private routes in the future 
+
+34-creating-the-register-form-with-states
+    - work on register component 
+    - each field has to have its own state within the component 
+    - dealing with component state 
+    - implement change events (typing)
+    - as a user I want to be able to sign up (created the form functionaluty for the submit button)
+
