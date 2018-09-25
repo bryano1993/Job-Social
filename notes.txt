@@ -155,3 +155,10 @@ What is redux?
 
                     -stuff we want to share 
 
+
+40-redux-store-chrome-extension-setup
+
+npm i redux react-redux redux-thunk
+- redux and store intialized
+- we want to register a user through an action 
+
