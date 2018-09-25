@@ -109,3 +109,6 @@ email & password login
     localhost:5000 is back end
     localhost:3000 is front end
     
+32-basic-layout
+    - created the basic layout which included the navbar, landing, and Footer.js files components and added it to app.js
+
