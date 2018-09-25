@@ -125,3 +125,33 @@ email & password login
     - using axios (frontend) to retrieve https requests 
     - easier (less code)
 
+38-error-handling-and-display)
+    - will remove axios for backend communication. 
+        -Will implement redux to take its place
+        - using to test api and set up error handling 
+    - will implement form validation in bootstrap 
+    - npm i classnames (if a certain something is true then add this class to it)
+    - implementing backend error handling to our front end 
+
+What is redux?
+    - we create components which can be ui through react
+    - Redux comes in when you need application level state
+        - you need to share data between components
+        - ex) to do list
+            have 1 component that lists all the to dos 
+            have a form componenet that accesses the to dos 
+
+            - want to access to do state from your list component 
+
+            - instead of passing things from componenet to compoennt you get a single source of truth 
+            that you can dispatch to all your compoentnts
+             
+
+             - things you want to share between compoenents
+
+             - going to have an auth state
+
+             - profile state that will hold all profile things
+
+                    -stuff we want to share 
+

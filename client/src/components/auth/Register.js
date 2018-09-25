@@ -38,7 +38,8 @@ class Register extends Component {
   }
 
   render() {
-    const { errors } = this.state;
+    const { errors } = this.state; // where our errors will  go same as const errors = this.state.errors;
+    // allows us to pull errors out of this state
 
     return (
       <div className="register">
