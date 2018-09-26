@@ -248,3 +248,8 @@ npm i redux react-redux redux-thunk
 
 58-add-education-form-and-functionality
 - adding education which will be similar to experience functionality
+
+59-dashboard-experience-display-and-delete
+- added feature to display expererience in profile 
+- npm i react-moment
+- npm i moment
