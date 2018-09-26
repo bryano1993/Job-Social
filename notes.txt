@@ -246,3 +246,5 @@ npm i redux react-redux redux-thunk
 57-add-experience-functionality
 - will be ale to implmenet add exprience functionality
 
+58-add-education-form-and-functionality
+- adding education which will be similar to experience functionality
