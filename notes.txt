@@ -198,3 +198,9 @@ npm i redux react-redux redux-thunk
 - last action it auth actions 
 - login, logout is complete, registration is complete
 - will start to work with profile state 
+
+46-text-field-group-input-component
+- start working with profile state
+- create a profile reducer
+- create dashboard
+
