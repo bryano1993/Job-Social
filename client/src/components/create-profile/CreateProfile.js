@@ -12,6 +12,7 @@ class CreateProfile extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      displaySocialInputs: false,
       handle: "",
       company: "",
       website: "",
@@ -29,13 +30,35 @@ class CreateProfile extends Component {
     };
 
     this.onChange = this.onChange.bind(this);
-    this.onChange = this.onSubmit.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
   }
 
   onSubmit(e) {
     e.preventDefault();
 
-    console.log("submit");
+    const profileData = {
+      handle: this.state.handle,
+      company: this.state.company,
+      website: this.state.website,
+      location: this.state.location,
+      status: this.state.status,
+      skills: this.state.skills,
+      githubusername: this.state.githubusername,
+      bio: this.state.bio,
+      twitter: this.state.twitter,
+      facebook: this.state.facebook,
+      linkedin: this.state.linkedin,
+      youtube: this.state.youtube,
+      instagram: this.state.instagram
+    };
+
+    this.props.createProfile(profileData, this.props.history);
   }
 
   onChange(e) {
@@ -43,20 +66,6 @@ class CreateProfile extends Component {
   }
 
   render() {
-    //select options for status
-    const options = [
-      { label: "* Select Professional Status", value: 0 },
-      { label: "Tech Enthusiast", value: "Tech Enthusiast" },
-      { label: "Developer", value: "Developer" },
-      { label: "Junior Developer", value: "Junior Developer" },
-      { label: "Senior Developer", value: "Senior Developer" },
-      { label: "Manager", value: "Manager" },
-      { label: "Student or Learning", value: "Student or Learning" },
-      { label: "Instructor or Teacher", value: "Instructor or Teacher" },
-      { label: "Intern", value: "Intern" },
-      { label: "Other", value: "Other" }
-    ];
-
     const { errors, displaySocialInputs } = this.state;
 
     let socialInputs;
@@ -111,6 +120,20 @@ class CreateProfile extends Component {
         </div>
       );
     }
+
+    // Select options for status
+    const options = [
+      { label: "* Select Professional Status", value: 0 },
+      { label: "Tech Enthusiast", value: "Tech Enthusiast" },
+      { label: "Developer", value: "Developer" },
+      { label: "Junior Developer", value: "Junior Developer" },
+      { label: "Senior Developer", value: "Senior Developer" },
+      { label: "Manager", value: "Manager" },
+      { label: "Student or Learning", value: "Student or Learning" },
+      { label: "Instructor or Teacher", value: "Instructor or Teacher" },
+      { label: "Intern", value: "Intern" },
+      { label: "Other", value: "Other" }
+    ];
 
     return (
       <div className="create-profile">
@@ -171,7 +194,7 @@ class CreateProfile extends Component {
                   onChange={this.onChange}
                   error={errors.skills}
                   info="Please use comma separated values (eg.
-                      HTML,CSS,JavaScript,PHP"
+                    HTML,CSS,JavaScript,PHP"
                 />
                 <TextFieldGroup
                   placeholder="Github Username"
@@ -229,4 +252,7 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(mapStateToProps)(CreateProfile);
+export default connect(
+  mapStateToProps,
+  { createProfile }
+)(withRouter(CreateProfile));

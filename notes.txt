@@ -227,3 +227,7 @@ npm i redux react-redux redux-thunk
 
 52-create-profile-form
 - bring in form field groups and start implementing forms 
+- create all fields in create profile component
+
+53-create-profile-functionality
+- 
