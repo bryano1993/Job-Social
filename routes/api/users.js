@@ -2,15 +2,13 @@
 const express = require("express");
 const router = express.Router();
 const gravatar = require("gravatar");
-const bcrypt = require("bcryptjs"); //will hash passwords
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 const passport = require("passport");
 
 // Load Input Validation
 const validateRegisterInput = require("../../validation/register");
-
-//load login input validation
 const validateLoginInput = require("../../validation/login");
 
 // Load User model
@@ -24,8 +22,6 @@ router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 // @route   POST api/users/register
 // @desc    Register user
 // @access  Public
-//localhost:5000/api/users/register
-
 router.post("/register", (req, res) => {
   const { errors, isValid } = validateRegisterInput(req.body);
 
@@ -33,7 +29,7 @@ router.post("/register", (req, res) => {
   if (!isValid) {
     return res.status(400).json(errors);
   }
-  //find if email exists
+
   User.findOne({ email: req.body.email }).then(user => {
     if (user) {
       errors.email = "Email already exists";
@@ -66,11 +62,9 @@ router.post("/register", (req, res) => {
   });
 });
 
-//validating email and password and make sure it exists
 // @route   GET api/users/login
 // @desc    Login User / Returning JWT Token
 // @access  Public
-//localhost:5000/api/users/login
 router.post("/login", (req, res) => {
   const { errors, isValid } = validateLoginInput(req.body);
 
@@ -127,9 +121,8 @@ router.get(
       id: req.user.id,
       name: req.user.name,
       email: req.user.email
-    }); // now we won't get password when SEND
+    });
   }
-  //when clicking on the send button, a prompt of unauthorized will appear because we didn't send a token to access the private route
 );
 
 module.exports = router;

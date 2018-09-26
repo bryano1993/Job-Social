@@ -1,4 +1,3 @@
-//location, bio, experiences,social network links
 const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
@@ -60,7 +59,7 @@ router.get("/all", (req, res) => {
     .catch(err => res.status(404).json({ profile: "There are no profiles" }));
 });
 
-// @route   GET api/profile/handle/:handle (backend route)
+// @route   GET api/profile/handle/:handle
 // @desc    Get profile by handle
 // @access  Public
 
@@ -102,7 +101,7 @@ router.get("/user/:user_id", (req, res) => {
     );
 });
 
-// @route   POST api/profile (localhost:5000/api/profile)
+// @route   POST api/profile
 // @desc    Create or edit user profile
 // @access  Private
 router.post(
@@ -167,10 +166,9 @@ router.post(
   }
 );
 
-// @route   POST api/profile/education
-// @desc    Add education to profile
+// @route   POST api/profile/experience
+// @desc    Add experience to profile
 // @access  Private
-
 router.post(
   "/experience",
   passport.authenticate("jwt", { session: false }),
@@ -285,7 +283,7 @@ router.delete(
 );
 
 // @route   DELETE api/profile
-// @desc    Delete user and profile (DELETE localhost:5000/api/profile )
+// @desc    Delete user and profile
 // @access  Private
 router.delete(
   "/",

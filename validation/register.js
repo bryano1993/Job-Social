@@ -1,4 +1,3 @@
-// will have all the rules for our regisration
 const Validator = require("validator");
 const isEmpty = require("./is-empty");
 

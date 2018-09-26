@@ -18,9 +18,19 @@ class Login extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  componentDidMount() {
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
+    }
+  }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
       this.props.history.push("/dashboard");
+    }
+
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
     }
   }
 
@@ -36,11 +46,12 @@ class Login extends Component {
   }
 
   onChange(e) {
-    this.setState({ [e.target.name]: e.target.value }); //set the state and will allow us to type in the login form
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
     const { errors } = this.state;
+
     return (
       <div className="login">
         <div className="container">
@@ -78,7 +89,7 @@ class Login extends Component {
                     onChange={this.onChange}
                   />
                   {errors.password && (
-                    <div className="invalid-feedback">{errors.password}</div> //.passwords comes from backend api
+                    <div className="invalid-feedback">{errors.password}</div>
                   )}
                 </div>
                 <input type="submit" className="btn btn-info btn-block mt-4" />
@@ -103,6 +114,6 @@ const mapStateToProps = state => ({
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   { loginUser }
 )(Login);

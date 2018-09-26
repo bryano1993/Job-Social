@@ -193,3 +193,8 @@ npm i redux react-redux redux-thunk
         
 44-login-form-functionality
 - implement it through the component form yet 
+
+45-logout-and-conditional-navbar-links
+- last action it auth actions 
+- login, logout is complete, registration is complete
+- will start to work with profile state 

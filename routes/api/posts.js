@@ -1,11 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const mongoose = require("mongoose"); //dealing with database
-const passport = require("passport"); //protect routes
+const mongoose = require("mongoose");
+const passport = require("passport");
 
 // Post model
 const Post = require("../../models/Post");
-
 // Profile model
 const Profile = require("../../models/Profile");
 
@@ -20,7 +19,6 @@ router.get("/test", (req, res) => res.json({ msg: "Posts Works" }));
 // @route   GET api/posts
 // @desc    Get posts
 // @access  Public
-
 router.get("/", (req, res) => {
   Post.find()
     .sort({ date: -1 })
@@ -31,7 +29,6 @@ router.get("/", (req, res) => {
 // @route   GET api/posts/:id
 // @desc    Get post by id
 // @access  Public
-
 router.get("/:id", (req, res) => {
   Post.findById(req.params.id)
     .then(post => res.json(post))
@@ -40,10 +37,9 @@ router.get("/:id", (req, res) => {
     );
 });
 
-// @route   GET api/posts
+// @route   POST api/posts
 // @desc    Create post
 // @access  Private
-
 router.post(
   "/",
   passport.authenticate("jwt", { session: false }),
@@ -70,7 +66,6 @@ router.post(
 // @route   DELETE api/posts/:id
 // @desc    Delete post
 // @access  Private
-
 router.delete(
   "/:id",
   passport.authenticate("jwt", { session: false }),
