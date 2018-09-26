@@ -204,3 +204,6 @@ npm i redux react-redux redux-thunk
 - create a profile reducer
 - create dashboard
 
+47-profile-reducer-and-get-current-profile)
+- work on profile state
+- create dashboard that will feth login user's profile
