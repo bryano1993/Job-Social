@@ -214,4 +214,9 @@ npm i redux react-redux redux-thunk
 49-private-route-setup
 - create protected routes 
 - have routes only users can access 
+- switch allows us to redirect when we log out 
 
+
+50-createProfile-component-route
+- create ability to have a profile 
+- create component and route for it 
