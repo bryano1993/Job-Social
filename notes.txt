@@ -220,3 +220,7 @@ npm i redux react-redux redux-thunk
 50-createProfile-component-route
 - create ability to have a profile 
 - create component and route for it 
+
+51-form-field-components
+- work on form input componenets 
+- textarefield, input, selectlistgroup
