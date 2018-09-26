@@ -238,3 +238,10 @@ npm i redux react-redux redux-thunk
 55-edit-profile-component
 - work on edit profile components 
 
+56-add-experience-form
+- add feature to add experiences and education from dashboard
+- creating lots of components 
+- programming is repetitive 
+- Failed to compile.
+[1]
+[1] ./src/components/add-credentials/AddExperience.js
