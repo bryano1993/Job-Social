@@ -230,4 +230,8 @@ npm i redux react-redux redux-thunk
 - create all fields in create profile component
 
 53-create-profile-functionality
-- 
+- finished created profile fields and implementing it into web app
+
+54-profile-actions-component-and-delete-account
+- can now delete an account
+
