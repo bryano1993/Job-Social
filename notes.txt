@@ -209,3 +209,9 @@ npm i redux react-redux redux-thunk
 - create dashboard that will feth login user's profile
 
 48-spinner-component-and-dashboard-start
+-created the dashboard component to its fullest
+
+49-private-route-setup
+- create protected routes 
+- have routes only users can access 
+
