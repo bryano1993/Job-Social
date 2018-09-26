@@ -235,3 +235,6 @@ npm i redux react-redux redux-thunk
 54-profile-actions-component-and-delete-account
 - can now delete an account
 
+55-edit-profile-component
+- work on edit profile components 
+
