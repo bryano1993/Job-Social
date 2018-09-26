@@ -256,3 +256,7 @@ npm i redux react-redux redux-thunk
 
 60-dashboard-education-display-and-delete
 - add a feature to display education credientials and then have the ability to delete them
+
+
+heroku login
+heroku create
