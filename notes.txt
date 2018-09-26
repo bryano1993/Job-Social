@@ -253,3 +253,6 @@ npm i redux react-redux redux-thunk
 - added feature to display expererience in profile 
 - npm i react-moment
 - npm i moment
+
+60-dashboard-education-display-and-delete
+- add a feature to display education credientials and then have the ability to delete them
