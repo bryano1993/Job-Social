@@ -277,6 +277,9 @@ npm i redux react-redux redux-thunk
 66-profile-github-and-touch-ups)
 - if user puts in github user name, it will show their repos
 
+67-postState-and-addPost-action
+- want users to post and comment 
+- immplemented an the add post action functionality. 
 
 heroku login
 heroku create
