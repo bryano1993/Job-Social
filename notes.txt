@@ -279,7 +279,11 @@ npm i redux react-redux redux-thunk
 
 67-postState-and-addPost-action
 - want users to post and comment 
-- immplemented an the add post action functionality. 
+- immplemented an the add post action functionality which will hit end point to get the post
+- set up post state with reducer 
+
+68-post-and-form-component
+- implement component (main post component)(post form component to add a post)
 
 heroku login
 heroku create
