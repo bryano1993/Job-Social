@@ -260,3 +260,5 @@ npm i redux react-redux redux-thunk
 
 heroku login
 heroku create
+git push heroku master
+heroku open
