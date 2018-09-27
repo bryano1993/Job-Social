@@ -298,6 +298,8 @@ npm i redux react-redux redux-thunk
 72-single-post-display
 -implement feature for a single post component and a route for it.
 
+73-comment-form-component-and-action
+- want to be able to add a comment through the application 
 
 
 
