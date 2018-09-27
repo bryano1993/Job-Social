@@ -301,7 +301,8 @@ npm i redux react-redux redux-thunk
 73-comment-form-component-and-action
 - want to be able to add a comment through the application 
 
-
+74-comment-display-and-delete
+- implement feature to display comments
 
 
 
