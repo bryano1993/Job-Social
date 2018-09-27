@@ -267,7 +267,9 @@ npm i redux react-redux redux-thunk
 - each profile will go to their respected handle 
 
 
-
+64-profile-header
+- display subcompoents of profile
+- want to display header of a profile 
 
 
 
