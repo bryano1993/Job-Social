@@ -271,7 +271,8 @@ npm i redux react-redux redux-thunk
 - display subcompoents of profile
 - want to display header of a profile 
 
-
+65-profile-about-and-credentials
+- incorporate about and credentials profile features
 
 
 
