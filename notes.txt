@@ -295,6 +295,13 @@ npm i redux react-redux redux-thunk
 71-delete-like-and-unlike-post
 -implement delete, like, and unlike posts feature
 
+72-single-post-display
+-implement feature for a single post component and a route for it.
+
+
+
+
+
 
 heroku login
 heroku create
