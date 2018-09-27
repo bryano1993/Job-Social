@@ -285,6 +285,11 @@ npm i redux react-redux redux-thunk
 68-post-and-form-component
 - implement component (main post component)(post form component to add a post)
 
+69-getPosts-action-and-postFeed-component
+- can add post through application now
+- implement getPosts actions
+
+
 heroku login
 heroku create
 git push heroku master
