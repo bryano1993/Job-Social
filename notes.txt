@@ -261,6 +261,12 @@ npm i redux react-redux redux-thunk
     -created features to view the profile component/page
 
 62-profile-items
+-created a feature to view all profiles 
+
+63-profile-by-handle-and-sub-components
+- each profile will go to their respected handle 
+
+
 
 
 
