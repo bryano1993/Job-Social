@@ -24,6 +24,8 @@ class Navbar extends Component {
           <Link className="nav-link" to="/dashboard">
             Dashboard
           </Link>
+        </li>
+        <li className="nav-item">
           <a
             href=""
             onClick={this.onLogoutClick.bind(this)}
@@ -61,7 +63,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            JobSocial
+            DevConnector
           </Link>
           <button
             className="navbar-toggler"
@@ -77,7 +79,7 @@ class Navbar extends Component {
               <li className="nav-item">
                 <Link className="nav-link" to="/profiles">
                   {" "}
-                  Techies
+                  Developers
                 </Link>
               </li>
             </ul>

@@ -274,6 +274,8 @@ npm i redux react-redux redux-thunk
 65-profile-about-and-credentials
 - incorporate about and credentials profile features
 
+66-profile-github-and-touch-ups)
+- if user puts in github user name, it will show their repos
 
 
 heroku login

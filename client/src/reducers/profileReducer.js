@@ -11,7 +11,6 @@ const initialState = {
   loading: false
 };
 
-//going to be fetching profiles
 export default function(state = initialState, action) {
   switch (action.type) {
     case PROFILE_LOADING:
@@ -28,10 +27,9 @@ export default function(state = initialState, action) {
     case GET_PROFILES:
       return {
         ...state,
-        profile: action.payload,
+        profiles: action.payload,
         loading: false
       };
-
     case CLEAR_CURRENT_PROFILE:
       return {
         ...state,
