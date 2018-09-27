@@ -290,7 +290,11 @@ npm i redux react-redux redux-thunk
 - implement getPosts actions
 
 70-post-item-component
-- 
+- can display posts now 
+
+71-delete-like-and-unlike-post
+-implement delete, like, and unlike posts feature
+
 
 heroku login
 heroku create
