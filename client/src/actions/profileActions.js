@@ -1,4 +1,5 @@
 import axios from "axios";
+
 import {
   GET_PROFILE,
   GET_PROFILES,
@@ -8,7 +9,7 @@ import {
   SET_CURRENT_USER
 } from "./types";
 
-//Get current profile
+// Get current profile
 export const getCurrentProfile = () => dispatch => {
   dispatch(setProfileLoading());
   axios
@@ -16,13 +17,32 @@ export const getCurrentProfile = () => dispatch => {
     .then(res =>
       dispatch({
         type: GET_PROFILE,
-        payload: res.data //will be the actual profile
+        payload: res.data
       })
     )
     .catch(err =>
       dispatch({
         type: GET_PROFILE,
         payload: {}
+      })
+    );
+};
+
+// Get profile by handle
+export const getProfileByHandle = handle => dispatch => {
+  dispatch(setProfileLoading());
+  axios
+    .get(`/api/profile/handle/${handle}`)
+    .then(res =>
+      dispatch({
+        type: GET_PROFILE,
+        payload: res.data
+      })
+    )
+    .catch(err =>
+      dispatch({
+        type: GET_PROFILE,
+        payload: null
       })
     );
 };
@@ -140,14 +160,15 @@ export const deleteAccount = () => dispatch => {
       );
   }
 };
-//Profile loading
+
+// Profile loading
 export const setProfileLoading = () => {
   return {
     type: PROFILE_LOADING
   };
 };
 
-//Clear profile
+// Clear profile
 export const clearCurrentProfile = () => {
   return {
     type: CLEAR_CURRENT_PROFILE

@@ -258,6 +258,10 @@ npm i redux react-redux redux-thunk
 - add a feature to display education credientials and then have the ability to delete them
 
 61-profiles-component-and-getProfiles-action
+    -created features to view the profile component/page
+
+62-profile-items
+
 
 
 
